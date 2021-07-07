@@ -8,10 +8,10 @@ import os
 
 print("Bot is running")
 
-bot = telebot.TeleBot('1614309528:AAGnMjq8sZd9mZRaYARE_VeK_QgZSv4HdeU')
+bot = telebot.TeleBot('')
 
 admin="0"
-ausername="glebboyarkin"
+ausername=""
 
 #пасхалки-------------------------------------------------------------------
 @bot.message_handler(commands=['c250'])
@@ -27,7 +27,7 @@ def admin_message(message):
 def admin_password(message):
     global admin
     global ausername
-    if message.text == "01gleb09":
+    if message.text == "":
         admin=message.from_user.id
         print(admin)
         if bool(message.from_user.username)==True:
